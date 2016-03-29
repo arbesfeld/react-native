@@ -162,7 +162,7 @@ function setUpMapAndSet() {
 }
 
 function setUpProduct() {
-  Object.defineProperty(GLOBAL.navigator, 'product', {value: 'ReactNative'});
+  polyfillGlobal('product', 'ReactNative', GLOBAL.navigator);
 }
 
 function setUpWebSockets() {
